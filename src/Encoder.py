@@ -6,7 +6,7 @@ for input in sys.argv[1:]:
         encodedValue = (ord(character.lower()))
         if (not chr(encodedValue).isalpha()):
             print(character,end='', flush=True)
-        elif encodedValue <= 110:
+        elif encodedValue <= 109:
             print((chr(encodedValue+13)),end='', flush=True)
         else:
              print((chr(encodedValue-13)),end='', flush=True)
